@@ -11,7 +11,9 @@ button img {
     display: block;
 }
 @font-face {
-    font-family: myFirstFont;
-    src: url();
-    font-weight: bold;
-  }
+    font-family: RaglanPunch;
+    src: url(https://github.com/anti-yarik/anti-yarek/blob/main/assets/fonts/FOT-RaglanPunchStd/Web-TT/raglan-punch.css);
+}
+#placeholder {
+    font-family: RaglanPunch;
+}
