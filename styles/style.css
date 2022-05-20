@@ -1,19 +1,27 @@
 .home {
     min-width: 500vw;
-    max-height: 100vh;
+    max-height: 90vh;
     background-color: #FFC9E0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .buttons {
-    float: left;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-items: center;
+    align-items: center;
+}
+button {
+    background: none;
+    border: 0ch;
+    width: 100vw;
 }
 button img {
-    display: block;
+    max-height: 90vh;
 }
 @font-face {
     font-family: RaglanPunch;
-    src: url(https://github.com/anti-yarik/anti-yarek/tree/main/assets/fonts/FOT-RaglanPunchStd/Web-TT);
-}
-#placeholder {
-    font-family: RaglanPunch;
+    src: url(../assets/fonts/raglan-punch.woff);
 }
