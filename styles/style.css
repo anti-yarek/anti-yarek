@@ -1,0 +1,17 @@
+.home {
+    min-width: 500vw;
+    max-height: 100vh;
+    background-color: #FFC9E0;
+    overflow-x: hidden;
+}
+.buttons {
+    float: left;
+}
+button img {
+    display: block;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url();
+    font-weight: bold;
+  }
