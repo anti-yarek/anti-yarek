@@ -12,7 +12,7 @@ button img {
 }
 @font-face {
     font-family: RaglanPunch;
-    src: url(https://github.com/anti-yarik/anti-yarek/blob/main/assets/fonts/FOT-RaglanPunchStd/Web-TT/raglan-punch.css);
+    src: url(https://github.com/anti-yarik/anti-yarek/tree/main/assets/fonts/FOT-RaglanPunchStd/Web-TT);
 }
 #placeholder {
     font-family: RaglanPunch;
