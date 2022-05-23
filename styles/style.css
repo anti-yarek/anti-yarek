@@ -4,14 +4,124 @@ body {
     width: 500vw;
     overflow: hidden;
 }
+header {
+    overflow: hidden;
+    height: 100vh;
+}
 .navbar-left {
     overflow: hidden;
     position: fixed;
-    top: 0%;
     width: 200%;
     z-index: 2;
+    
+    -moz-transform: rotate(-90deg) translateX(-82.5vw);
+    -moz-transform-origin: top left;
+    -webkit-transform: rotate(-90deg) translateX(-82.5vw);
+    -webkit-transform-origin: top left;
+    transform: rotate(-90deg) translateX(-82.5vw);
+    transform-origin: top left;
+  
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from {-moz-transform: rotate(-90deg) translateX(-82.5vw);
+        -moz-transform-origin: top left; }
+  to {  -moz-transform: rotate(-90deg) translateX(-170vw);
+        -moz-transform-origin: top left; }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {-webkit-transform: rotate(-90deg) translateX(-82.5vw);
+        -webkit-transform-origin: top left; }
+  to {  -webkit-transform: rotate(-90deg) translateX(-170vw);
+        -webkit-transform-origin: top left; }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: rotate(-90deg) translateX(-82.5vw);
+    -moz-transform-origin: top left;
+    -webkit-transform: rotate(-90deg) translateX(-82.5vw);
+    -webkit-transform-origin: top left;
+    transform: rotate(-90deg) translateX(-82.5vw);
+    transform-origin: top left;
+  }
+  to {
+    -moz-transform: rotate(-90deg) translateX(-170vw);
+    -moz-transform-origin: top left;
+    -webkit-transform: rotate(-90deg) translateX(-170vw);
+    -webkit-transform-origin: top left;
+    transform: rotate(-90deg) translateX(-170vw);
+    transform-origin: top left;
+  }
 }
 .navbar-left a {
+    float: left;
+    display: block;
+    text-align: center;
+    font-family: Shatter;
+    text-decoration: none;
+    font-size: 7vw;
+    padding: 1vw;
+}
+.navbar-right {
+    overflow: hidden;
+    position: fixed;
+    width: 200%;
+    z-index: 2;
+        
+    -moz-transform: rotate(90deg) translateX(0vw) translateY(-100vw);
+    -moz-transform-origin: top left;
+    -webkit-transform: rotate(90deg) translateX(0vw) translateY(-100vw);
+    -webkit-transform-origin: top left;
+    transform: rotate(90deg) translateX(0vw) translateY(-100vw);
+    transform-origin: top left;
+  
+    -moz-animation: my-animation2 15s linear infinite;
+    -webkit-animation: my-animation2 15s linear infinite;
+    animation: my-animation2 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation2 {
+  from {-moz-transform: rotate(90deg) translateX(0vw) translateY(-100vw);
+        -moz-transform-origin: top left; }
+  to {  -moz-transform: rotate(90deg) translateX(-87.5vw) translateY(-100vw);
+        -moz-transform-origin: top left; }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation2 {
+  from {-webkit-transform: rotate(90deg) translateX(0vw) translateY(-100vw);
+        -webkit-transform-origin: top left; }
+  to {  -webkit-transform: rotate(90deg) translateX(-87.5vw) translateY(-100vw);
+        -webkit-transform-origin: top left; }
+}
+
+@keyframes my-animation2 {
+  from {
+    -moz-transform: rotate(90deg) translateX(0vw) translateY(-100vw);
+    -moz-transform-origin: top left;
+    -webkit-transform: rotate(90deg) translateX(0vw) translateY(-100vw);
+    -webkit-transform-origin: top left;
+    transform: rotate(90deg) translateX(0vw) translateY(-100vw);
+    transform-origin: top left;
+  }
+  to {
+    -moz-transform: rotate(90deg) translateX(-87.5vw) translateY(-100vw);
+    -moz-transform-origin: top left;
+    -webkit-transform: rotate(90deg) translateX(-87.5vw) translateY(-100vw);
+    -webkit-transform-origin: top left;
+    transform: rotate(90deg) translateX(-87.5vw) translateY(-100vw);
+    transform-origin: top left;
+  }
+}
+.navbar-right a {
     float: left;
     display: block;
     text-align: center;
@@ -71,7 +181,7 @@ button {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 5vw;
-    line-height: 13vh;
+    line-height: 6vw;
     margin-top: -10vh;
 }
 .intro img {
@@ -87,20 +197,91 @@ button {
     text-transform: lowercase;
     font-weight: bold;
 }
-button img {
+/*button img {
     max-height: 100vh;
+}*/
+.placeholder a img{
+    height: 100vh;
+    width: 70vw;
+    object-fit: fill;
+    position: relative;
 }
-.placeholder img{
-    min-height: 100vh;
+.placeholder a img:hover {
+    height: 100vh;
+    width: 70vw;
+    top: 0;
+    position: relative;
+    object-fit: fill;
+    background: url("../assets/Vector.svg") no-repeat;
+    background-origin: inherit;
+    background-position: center;
+    background-size: 70vw;
+}
+.arrow1 {
+    max-width: 5vw;
+    transform: rotate(-90deg) translateY(-20vw) translateX(-10vh);
+    transform-origin: top left;
 }
 .hanky-panky img{
     height: 80vh;
+    width: 20vw;
+    position: relative;
+}
+.hanky-panky img:hover {
+    height: 80vh;
+    width: 20vw;
+    position: relative;
+    top: 0;
+    margin: -10vh -25vw -10vh -25vw;
+    padding: 10vh 25vw 10vh 25vw;
+    background: url("../assets/hp-hover.jpg") no-repeat;
+    background-origin: inherit;
+    background-position: center;
+    background-size: 70vw;
+}
+.arrow2 {
+    max-width: 5vw;
+    transform: rotate(-90deg) translateY(-30vw) translateX(-10vh);
+    transform-origin: top left;
 }
 .zeppelin img {
     height: 50vh;
+    width: 60vw;
+    position: relative;
+}
+.zeppelin img:hover {
+    height: 50vh;
+    width: 60vw;
+    position: relative;
+    top: 0;
+    margin: -25vh -10vw -25vh -10vw;
+    padding: 25vh 10vw 25vh 10vw;
+    background: url("../assets/Screenshot1.png") no-repeat;
+    background-origin: inherit;
+    background-position: center;
+    background-size: 80vw;
+}
+.arrow3 {
+    max-width: 5vw;
+    transform: rotate(-90deg) translateY(-15vw) translateX(-10vh);
+    transform-origin: top left;
 }
 .kremlin img {
-    height: 80vh;
+    height: 70vh;
+    width: 30vw;
+    position: relative;
+}
+.kremlin img:hover {
+    height: 70vh;
+    width: 30vw;
+    position: relative;
+    top: 0;
+    padding: 15vh 20vw 15vh 20vw;
+    margin: -15vh -20vw -15vh -20vw;
+    background: url(../assets/kremlin-hover.jpg) no-repeat;
+    background-origin: inherit;
+    background-position: center;
+    background-size: 70vw;
 }
 @font-face {
     font-family: RaglanPunch;
