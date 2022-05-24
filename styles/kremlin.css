@@ -174,3 +174,14 @@ header {
     line-height: 5vh;
     padding-bottom: 5vh;
 }
+.wrapper2 a {
+  font-family: Shatter;
+  font-size: 9.5vw;
+  color: #F31C29;
+  text-decoration: none;
+  width: 70vw;
+}
+.wrapper2 h1 {
+  padding-bottom: 10vh;
+  text-align: center;
+}

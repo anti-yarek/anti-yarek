@@ -191,3 +191,14 @@ header {
     margin-top: 0vh;
     margin-bottom: 5vh;
 }
+.wrapper a {
+    font-family: Shatter;
+    font-size: 9.5vw;
+    color: #F31C29;
+    text-decoration: none;
+    width: 70vw;
+}
+.wrapper h1 {
+    padding-bottom: 10vh;
+    text-align: center;
+}
