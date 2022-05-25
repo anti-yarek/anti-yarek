@@ -246,12 +246,12 @@ button {
 }
 .zeppelin img {
     height: 50vh;
-    width: 60vw;
+    width: 50vw;
     position: relative;
 }
 .zeppelin img:hover {
     height: 50vh;
-    width: 60vw;
+    width: 50vw;
     position: relative;
     top: 0;
     margin: -25vh -10vw -25vh -10vw;
@@ -259,11 +259,11 @@ button {
     background: url("../assets/Screenshot1.png") no-repeat;
     background-origin: inherit;
     background-position: center;
-    background-size: 80vw;
+    background-size: 70vw;
 }
 .arrow3 {
     max-width: 5vw;
-    transform: rotate(-90deg) translateY(-15vw) translateX(-10vh);
+    transform: rotate(-90deg) translateY(-20vw) translateX(-10vh);
     transform-origin: top left;
 }
 .kremlin img {
